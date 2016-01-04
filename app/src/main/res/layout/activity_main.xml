@@ -1,0 +1,40 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="启动蓝牙"
+        android:id="@+id/button_MainActivity_ActiveBluetooth"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        style="@style/rbt_bottom"
+        android:layout_alignRight="@+id/listView_MainActivity_DeviceList"
+        android:layout_alignLeft="@+id/listView_MainActivity_DeviceList" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView_MainActivity_DeviceList"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:choiceMode="singleChoice" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textView_MainActivity_Message"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentStart="false"
+        android:layout_alignLeft="@+id/listView_MainActivity_DeviceList"
+        android:layout_alignRight="@+id/listView_MainActivity_DeviceList"
+        android:layout_above="@+id/button_MainActivity_ActiveBluetooth" />
+
+</RelativeLayout>
